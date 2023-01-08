@@ -5,5 +5,14 @@
     color: Black;
 }
 .nav-link{
-    color:black
+    
+    padding-top: 100px;
+    
+}
+
+
+.hed-btn{
+    padding-top: 10px;
+    padding-left: 90px;
+    align-content: space-between;
 }

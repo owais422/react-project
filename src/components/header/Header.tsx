@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { Grid, Toolbar , AppBar,Tabs,Tab} from '@mui/material';
 import "./header.css"
-// import Button from './button/Button'
-
+import Buttons from '../button/Button'
 
 
 const Header = () => {
   const [value, setValue] = useState();
   return (
+    
     <AppBar >
       <Toolbar className="AppBar">
       <Grid container>
@@ -16,14 +16,15 @@ const Header = () => {
         </Grid>
         <Grid item xs={6}>
       <Tabs className="tab-link" indicatorColor="secondary" value={value} onChange={(e,val)=>setValue(val)}>
-        <Tab label="Home" className="nav-link"/>
+       <Tab label="Home" className="nav-link"/>
         <Tab label="About Us" className="nav-link"/>
         <Tab label="Courses" className="nav-link"/>
         <Tab label="Contact Us" className="nav-link"/>
       </Tabs>
         </Grid>
-        <Grid item xs={3}>
-            
+        <Grid item xs={3} className="hed-btn">
+        <Buttons />
+        <Buttons/>
         </Grid>
       </Grid>
       </Toolbar>
